@@ -1,11 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import View
-
+from product.models import Product
 # Create your views here.
 
 def product_page(request):
-    return render(request,'pages/product.html')
+    Context = {}
+    product_obj = Product.objects.filter()
+    Context["products"] = product_obj
+    return render(request,'pages/product.html',Context)
 
 
 
