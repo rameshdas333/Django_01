@@ -4,14 +4,16 @@
 <div class="grid grid-cols-4 gap-6 mx-10  ">
     {% for product in products %}
 
-<div class="w-full mt-28 mx-4  max-w-sm bg-white p-6 border border-default border-red-300 rounded-base shadow-xs">
+<div class="w-full mt-28 mx-4   max-w-sm bg-white p-6 border border-default border-red-300 rounded-base shadow-xs">
 
     {% if product.discount_price > 0 %}
     <span class="text-lg text-white ml-0 p-1  bg-red-400 font-medium ">{{product.discount_parcenteage}} % OFF</span>
  
     {% endif  %}
    
-        <img class="mt-4 rounded-base mb-6" src="{{product.image.url}}" alt="product image" />
+       <div class="flex items-center justify-center">
+         <img class="mt-4 h-60 w-60  rounded-base mb-6" src="{{product.image.url}}" alt="product image" />
+       </div>
    
     <div>
       

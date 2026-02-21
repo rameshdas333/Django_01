@@ -5,7 +5,9 @@ from django.views import View
 # Create your views here.
 
 def sign_up(request):
-    
-    print(request)
-    print(request)
-    return render(request,'pages/signup.html')
+    if request.method == "POST":
+        data = request.POST
+        name = data.get('name',"default")
+        email = data.get('email',"default")
+        print(request.POST)
+        return render(request,'pages/signup.html')
