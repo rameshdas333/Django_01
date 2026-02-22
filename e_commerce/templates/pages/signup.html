@@ -4,7 +4,14 @@
 
 
 <div class="w-full mx-10 mt-24 max-w-sm bg-white p-6 border border-default rounded-base shadow-xs">
-    <form method="POST" action="">
+   {% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+    <form method="POST" >
          {% csrf_token %} 
         <h5 class="text-xl font-semibold text-heading mb-6">Sign in to our platform</h5>
         <div class="mb-4">
@@ -17,11 +24,11 @@
         </div>
         <div>
             <label for="password" class="block mb-2.5 text-sm font-medium text-heading">Your password</label>
-            <input type="password" id="password" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="•••••••••" required />
+            <input type="password" name="password" id="password" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="•••••••••" required />
         </div>
         <div>
             <label for="password" class="block mb-2.5 text-sm font-medium text-heading">Confirm password</label>
-            <input type="password" id="confirm_password" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="•••••••••" required />
+            <input type="password" name="confirm_password"  id="confirm_password" class="bg-neutral-secondary-medium border border-default-medium text-heading text-sm rounded-base focus:ring-brand focus:border-brand block w-full px-3 py-2.5 shadow-xs placeholder:text-body" placeholder="•••••••••" required />
         </div>
         
         <button type="submit" class="text-Black mt-4 bg-red-200 box-border border border-transparent hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none w-full mb-3">Sign Up</button>
