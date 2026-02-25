@@ -7,4 +7,11 @@ from django.contrib.auth.decorators import login_required
 
 @login_required
 def home_page(request):
-    return render(request,'pages/home.html')
+    return render(request,'pages/index.html')
+
+
+# def product_page(request):
+#     Context = {}
+#     product_obj = Product.objects.filter()
+#     Context["products"] = product_obj
+#     return render(request,'pages/product.html',Context)

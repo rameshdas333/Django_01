@@ -28,7 +28,9 @@
     {% endif  %}
    
        <div class="flex items-center justify-center">
-         <img class="mt-4 h-60 w-60  rounded-base mb-6" src="{{product.image.url}}" alt="product image" />
+        {% if product.image %}
+    <img class="mt-4 h-60 w-60  rounded-base mb-6" src="{{product.image.url}}" alt="product image" />
+        {% endif %}
        </div>
    
     <div>

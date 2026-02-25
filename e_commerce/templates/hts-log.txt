@@ -1,0 +1,47 @@
+HTTrack3.49-2+htsswf+htsjava launched on Wed, 25 Feb 2026 22:31:07 at https://sellzy-preview.netlify.app/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://sellzy-preview.netlify.app/ -O1 "C:\python\py1\template html\django_10" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+22:36:50	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/discount-shape.png (from https://sellzy-preview.netlify.app/)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/slider-left-shape.png (from https://sellzy-preview.netlify.app/)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/slider-right-shape.png (from https://sellzy-preview.netlify.app/)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/shop-left-sidebar.html (from https://sellzy-preview.netlify.app/)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/footer-left-shape.png (from https://sellzy-preview.netlify.app/)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/footer-right-shape.png (from https://sellzy-preview.netlify.app/)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/bottom-border.png (from https://sellzy-preview.netlify.app/)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/assets/css/vendor/hugeicons/hgi-stroke-rounded.svg?t=1721855138058 (from https://sellzy-preview.netlify.app/assets/css/vendor/hugeicons/hgi-stroke-rounded.css)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/assets/images/product-details/product-details-11.jpg (from https://sellzy-preview.netlify.app/assets/css/style.css)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/assets/images/home-4/promo-card-2.png (from https://sellzy-preview.netlify.app/assets/css/style.css)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/assets/images/home-4/promo-card-3.png (from https://sellzy-preview.netlify.app/assets/css/style.css)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/home-2/slider-left-shape-2.png (from https://sellzy-preview.netlify.app/index-2)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/discount-primary-shape.png (from https://sellzy-preview.netlify.app/index-2)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/cart.single-vendor.html (from https://sellzy-preview.netlify.app/index-3)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/assets/images/home-3/farm-fresh-banner-nuts.png (from https://sellzy-preview.netlify.app/index-3)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/blog.html (from https://sellzy-preview.netlify.app/index-3)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/comapre.html (from https://sellzy-preview.netlify.app/index-4)
+22:36:55	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/home-4/black-dress-woman.png (from https://sellzy-preview.netlify.app/index-4)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/home-5/promo-bg-1.png (from https://sellzy-preview.netlify.app/index-5)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/home-5/promo-bg-2.jpg (from https://sellzy-preview.netlify.app/index-5)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/home-5/promo-bg-3.jpg (from https://sellzy-preview.netlify.app/index-5)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/home-5/promo-bg-4.png (from https://sellzy-preview.netlify.app/index-5)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/home-5/promo-grid-1.jpg (from https://sellzy-preview.netlify.app/index-5)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/home-5/promo-grid-2.jpg (from https://sellzy-preview.netlify.app/index-5)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/home-5/promo-grid-3.jpg (from https://sellzy-preview.netlify.app/index-5)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/discount-warning-shape.png (from https://sellzy-preview.netlify.app/product-details)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/product-details/product-details-9.jpg (from https://sellzy-preview.netlify.app/product-details-4)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/product-details/product-details-10.jpg (from https://sellzy-preview.netlify.app/product-details-4)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/product-details/product-details-11.jpg (from https://sellzy-preview.netlify.app/product-details-4)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/product-details/product-details-12.jpg (from https://sellzy-preview.netlify.app/product-details-4)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/product-details/product-details-13.png (from https://sellzy-preview.netlify.app/product-details-4)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/vendor-filter-top-shape.png (from https://sellzy-preview.netlify.app/vendor-left-sidebar-marketplace)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/banner-horizontal-filter/banner-1.png (from https://sellzy-preview.netlify.app/banner-with-horizontal-filter-3col)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/banner-horizontal-filter/banner-2.png (from https://sellzy-preview.netlify.app/banner-with-horizontal-filter-3col)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/banner-horizontal-filter/banner-3.png (from https://sellzy-preview.netlify.app/banner-with-horizontal-filter-3col)
+22:36:56	Error: 	"Not Found" (404) at link https://sellzy-preview.netlify.app/images/banner-horizontal-filter/banner-4.png (from https://sellzy-preview.netlify.app/banner-with-horizontal-filter-3col)
+
+HTTrack Website Copier/3.49-2 mirror complete in 5 minutes 49 seconds : 458 links scanned, 421 files written (59766074 bytes overall) [33849454 bytes received at 96989 bytes/sec], 39179215 bytes transferred using HTTP compression in 115 files, ratio 14%
+(36 errors, 0 warnings, 0 messages)
