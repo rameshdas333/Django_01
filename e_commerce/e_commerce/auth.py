@@ -21,6 +21,9 @@
       
 #     return render(request,'pages/signup.html')
 
+
+
+
 from django.shortcuts import render
 from django.contrib import messages
 from django.contrib.auth.models import User
@@ -54,3 +57,7 @@ def sign_up(request):
         return render(request, 'pages/signup.html')
 
     return render(request, 'pages/signup.html')
+
+def sign_in(request):
+    
+    return render(request,"pages/home.html")
