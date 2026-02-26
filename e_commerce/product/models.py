@@ -42,7 +42,7 @@ class Product(models.Model):
     in_stock = models.BooleanField(default=True)
     
     def __str__(self):
-        return str(self.name)#f"{self.name}"
+        return str(self.name) or "" #f"{self.name}"
     
     
     @property

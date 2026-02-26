@@ -1,5 +1,9 @@
 from product.models import Product
 from django.http import JsonResponse
+from rest_framework import viewsets
+from product.serializers import ProductSerializer
+from rest_framework.response import Response
+from rest_framework.decorators import api_view
 
 def product_api(request):
     limit = int(request.GET.get('limit', 1))
@@ -23,3 +27,21 @@ def product_api(request):
     return JsonResponse({
         "data":products
     })
+    
+    
+# class ProductViewset(viewsets.ModelViewSet):
+#     queryset = Product.objects.all()
+#     serializer_class = ProductSerializer
+    
+#     def list(self, request, *args, **kwargs):
+#         queryset = self.get_queryset()
+#         print(queryset)
+#         return Response("called")
+
+
+@api_view(["GET", "DELETE"])
+def product_api_function(request):
+    if request.method == "GET":
+        product = Product.objects.get(id=1)
+        serializer = ProductSerializer(product, many=False) 
+        return Response(serializer.data)
