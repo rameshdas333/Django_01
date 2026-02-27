@@ -46,7 +46,7 @@ class Product(models.Model):
     
     
     @property
-    def discount_parcenteage(self):
+    def discount_parcentage(self):
         if self.discount_price > 0:
             diff = self.discount_price - self.retail_price
             parcent = (diff/self.retail_price) * 100

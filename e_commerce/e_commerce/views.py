@@ -1,17 +1,18 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.views import View
-from django.contrib.auth.decorators import login_required
+# from django.contrib.auth.decorators import login_required
+from product.models import Product
 
 # Create your views here.
 
-@login_required
+# @login_required
 def home_page(request):
-    return render(request,'pages/index.html')
+     Context = {}
+     product_obj = Product.objects.filter(discount_price__gt=0)
+     Context["discounted_products"] = product_obj
+     Product.objects.create()
+     print(Context)
+     return render(request,'pages/index.html',Context)
 
 
-# def product_page(request):
-#     Context = {}
-#     product_obj = Product.objects.filter()
-#     Context["products"] = product_obj
-#     return render(request,'pages/product.html',Context)
