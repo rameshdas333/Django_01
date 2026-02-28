@@ -29,14 +29,14 @@ def product_api(request):
     })
     
     
-# class ProductViewset(viewsets.ModelViewSet):
-#     queryset = Product.objects.all()
-#     serializer_class = ProductSerializer
+class ProductViewset(viewsets.ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
     
-#     def list(self, request, *args, **kwargs):
-#         queryset = self.get_queryset()
-#         print(queryset)
-#         return Response("called")
+    def list(self, request, *args, **kwargs):
+        queryset = self.get_queryset()
+        print(queryset)
+        return Response("called")
 
 
 @api_view(["GET", "DELETE"])

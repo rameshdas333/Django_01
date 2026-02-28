@@ -54,16 +54,16 @@ class Product(models.Model):
             return round(parcent,2)
         return 0
         
-# def save(self, *args, **kwargs):
-#     name = self.image.name
-#     extension = name.split('.')[-1]
-#     new_name = f"{self.name}_{self.product_code}.{extension}"
+def save(self, *args, **kwargs):
+    name = self.image.name
+    extension = name.split('.')[-1]
+    new_name = f"{self.name}_{self.product_code}.{extension}"
 
-#     print(name)
-#     print(extension)
-#     print(new_name) 
-#     self.image.name =new_name
-#     super().save(*args, **kwargs)
+    print(name)
+    print(extension)
+    print(new_name) 
+    self.image.name =new_name
+    super().save(*args, **kwargs)
     
 class Inventory(models.Model):
          product = models.OneToOneField(Product,on_delete=models.CASCADE,null=True,blank=True )
