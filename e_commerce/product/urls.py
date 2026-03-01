@@ -4,7 +4,7 @@ from  .views import *
 from .api import *
 from rest_framework.routers import DefaultRouter
 routers = DefaultRouter()
-# routers.register('rest-api',ProductViewset,basename='product-api')
+routers.register('rest-api',ProductViewset,basename='product-api')
 
 
 urlpatterns = [

@@ -1,6 +1,6 @@
 from product.models import Product
 from django.http import JsonResponse
-from rest_framework import viewsets
+from rest_framework import viewsets,generics
 from product.serializers import ProductSerializer
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
@@ -39,9 +39,16 @@ class ProductViewset(viewsets.ModelViewSet):
         return Response("called")
 
 
-@api_view(["GET", "DELETE"])
+@api_view(["GET","DELETE"])
 def product_api_function(request):
     if request.method == "GET":
-        product = Product.objects.get(id=1)
-        serializer = ProductSerializer(product, many=False) 
+        product = Product.objects.get(id=5)
+        serializer = ProductSerializer(product,many=False) 
+        print(product)
+        print(serializer)
+        print(serializer.data)
         return Response(serializer.data)
+    
+# class ProductViewset(generics.RetrieveAPIView):
+#     queryset = Product.objects.all()
+#     serializer_class = ProductSerializer()
