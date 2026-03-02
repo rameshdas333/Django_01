@@ -49,6 +49,7 @@ def product_api_function(request):
         print(serializer.data)
         return Response(serializer.data)
     
-# class ProductViewset(generics.RetrieveAPIView):
-#     queryset = Product.objects.all()
-#     serializer_class = ProductSerializer()
+   
+class ProductViewset(generics.RetrieveAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer()
