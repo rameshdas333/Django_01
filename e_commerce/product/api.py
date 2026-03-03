@@ -16,7 +16,7 @@ def product_api(request):
     products = Product.objects.all()
     
     if search:
-        products = products.filter(name__icontains=search)
+       products = products.filter(name__icontains=search)
         
     start = offset
     end = offset + limit
@@ -29,14 +29,14 @@ def product_api(request):
     })
     
     
-class ProductViewset(viewsets.ModelViewSet):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
+# class ProductViewset(viewsets.ModelViewSet):
+#     queryset = Product.objects.all()
+#     serializer_class = ProductSerializer
     
-    def list(self, request, *args, **kwargs):
-        queryset = self.get_queryset()
-        print(queryset)
-        return Response("called")
+    # def list(self, request, *args, **kwargs):
+    #     queryset = self.get_queryset()
+    #     print(queryset)
+    #     return Response("called")
 
 
 @api_view(["GET","DELETE"])
@@ -52,4 +52,4 @@ def product_api_function(request):
    
 class ProductViewset(generics.RetrieveAPIView):
     queryset = Product.objects.all()
-    serializer_class = ProductSerializer()
+    serializer_class = ProductSerializer

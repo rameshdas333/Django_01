@@ -29,7 +29,6 @@ def upload_image_path(instance, filename):
 #========================
 
 class Product(models.Model):
-  
     name = models.CharField(max_length=255,null=True,blank=True)
     product_code= models.CharField(max_length=255,null=True,blank=True)
     # category = models.ForeignKey(Category,on_delete=models.CASCADE,null=True,blank=True)
@@ -69,4 +68,4 @@ class Inventory(models.Model):
          product = models.OneToOneField(Product,on_delete=models.CASCADE,null=True,blank=True )
          quantity= models.PositiveIntegerField(default=0)
          def __str__(self):
-            return f"{self.product} +{self.quantity}"
+            return f"{self.product} - {self.quantity}"
