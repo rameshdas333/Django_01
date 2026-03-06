@@ -4,7 +4,7 @@ from .models import Product,Inventory
 class InventorySerializer(serializers.ModelSerializer):
     class Meta:
         model = Inventory
-        fields = ['quantity']
+        fields = ['quantity:']
 
 
 class ProductSerializer(serializers.ModelSerializer):
