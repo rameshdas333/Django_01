@@ -1,10 +1,10 @@
 from rest_framework import serializers
 from .models import Product,Inventory
 
-class InventorySerializer(serializers.ModelSerializer):
+class InventorySerializer(serializers.Serializer):
     class Meta:
         model = Inventory
-        fields = ['quantity:']
+        exclude = ['products']
 
 
 class ProductSerializer(serializers.ModelSerializer):
