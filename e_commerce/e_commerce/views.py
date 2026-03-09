@@ -10,7 +10,7 @@ from product.models import Product
 def home_page(request):
      Context = {}
      product_obj = Product.objects.filter(discount_price__gt=0)
-     Context["discounted_products"] = product_obj
+     Context["discounted_product"] = product_obj
      Product.objects.create()
      print(Context)
      return render(request,'pages/index.html',Context)
